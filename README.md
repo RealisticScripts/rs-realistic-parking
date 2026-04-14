@@ -98,4 +98,5 @@ Config.TowJobs = {
 - `.gitignore`
 
 ## License
-MIT
+
+MIT License © 2026 Realistic Scripts
