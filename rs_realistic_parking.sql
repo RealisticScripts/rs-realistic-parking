@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `rs_realistic_parking` (
+    `plate` varchar(15) NOT NULL,
+    `citizenid` varchar(50) DEFAULT NULL,
+    `vehicle` varchar(50) DEFAULT NULL,
+    `model` bigint NOT NULL,
+    `vehicle_type` varchar(20) DEFAULT 'automobile',
+    `coords` longtext DEFAULT NULL,
+    `heading` float DEFAULT 0,
+    `props` longtext DEFAULT NULL,
+    `damage` longtext DEFAULT NULL,
+    `fuel` float DEFAULT 100,
+    `lock_state` int DEFAULT 1,
+    `display_name` varchar(100) DEFAULT NULL,
+    `parked_by_citizenid` varchar(50) DEFAULT NULL,
+    `parked_by_name` varchar(100) DEFAULT NULL,
+    `owner_name` varchar(100) DEFAULT NULL,
+    `parked_at` timestamp NULL DEFAULT current_timestamp(),
+    `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+    PRIMARY KEY (`plate`),
+    KEY `idx_rs_realistic_parking_citizenid` (`citizenid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
