@@ -612,7 +612,7 @@ AddEventHandler('onResourceStart', function(resourceName)
 end)
 
 
-local currentVersion = 'v1.0.2'
+local currentVersion = 'v1.0.0'
 local repoName = 'rs-realistic-parking'
 
 local function fetchLatestVersion(callback)
