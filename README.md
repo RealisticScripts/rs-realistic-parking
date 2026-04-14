@@ -97,6 +97,5 @@ Config.TowJobs = {
 - `LICENSE`
 - `.gitignore`
 
-## Suggested Improvement
-
-A future enhancement worth considering is an optional parking-zone allowlist for servers that want stricter realism rules around where parking is permitted. It is not implemented here because it was not part of the requested scope.
+## License
+MIT
