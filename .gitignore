@@ -1,3 +1,37 @@
+# Operating system files
 .DS_Store
 Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Temporary / swap files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Logs
 *.log
+logs/
+
+# Local environment overrides
+.env
+.env.*
+!.env.example
+
+# Lua / tooling caches
+luac.out
+.lua/
+.cache/
+
+# Release / archive artifacts
+*.zip
+*.tar
+*.gz
+*.rar
